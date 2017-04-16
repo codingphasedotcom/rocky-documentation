@@ -1,0 +1,772 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Rocky Stack</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;code&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <img src="images/logo.png" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="code">code</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href='#'>Sign Up for a Developer Key</a></li>
+            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id="introduction">Introduction</h1>
+
+<h2 id="react-over-crystal-kemal-yarn">React Over Crystal, Kemal, &amp; Yarn</h2>
+
+<p>Current version is <code class="prettyprint">0.1.0</code></p>
+
+<h3 id="welcome-to-the-rocky-stack">Welcome to the ROCKY Stack</h3>
+
+<p>I built this as an experiment to put together the best libraries to build a modern yet simple stack.</p>
+
+<p>I chose to base my stack</p>
+
+<ul>
+<li><p>React - Solid front end framework backed by Facebook</p></li>
+<li><p>Crystal - A powerful new language with syntax similar to ruby but is as fast as &ldquo;C&rdquo;</p></li>
+<li><p>Kemal - Super light weight http framework made by Serdar Doğruyol</p></li>
+<li><p>Yarn - The fastest package manager also made by Facebook</p></li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Follow the code on the right for the installation commands that you will have to run on your operating systems terminal / console.</p>
+
+<p>Requirements</p>
+
+<h3 id="rocky-project">Rocky Project</h3>
+<pre class="highlight shell tab-shell"><code>git clone https://github.com/codingphasedotcom/rocky
+</code></pre>
+<p>Download or clone the ROCKY Project</p>
+
+<p><a href="https://github.com/codingphasedotcom/rocky">https://github.com/codingphasedotcom/rocky</a></p>
+
+<p>homebrew for mac</p>
+
+<h2 id="os-x-mac">OS X (Mac)</h2>
+<pre class="highlight shell tab-shell"><code>/usr/bin/ruby -e <span class="s2">"</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">"</span>
+</code></pre>
+<p>Homebrew</p>
+<pre class="highlight shell tab-shell"><code>brew update
+brew install crystal-lang
+brew install yarn
+</code></pre>
+<p>Make sure you have homebrew</p>
+
+<h2 id="ubuntu-linux">Ubuntu / Linux</h2>
+<pre class="highlight shell tab-shell"><code>curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
+sudo apt-get install crystal
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+<span class="nb">echo</span> <span class="s2">"deb https://dl.yarnpkg.com/debian/ stable main"</span> | sudo tee /etc/apt/sources.list.d/yarn.list
+</code></pre>
+<p>Debian / Ubuntu</p>
+
+<p>For other OSes and distros check the official documentation.</p>
+
+<p><a href="https://yarnpkg.com/en/docs/install#linux-tab">https://yarnpkg.com/en/docs/install#linux-tab</a></p>
+
+<h2 id="dependencies">Dependencies</h2>
+
+<h3 id="get-crystal-dependencies">Get Crystal Dependencies</h3>
+<pre class="highlight shell tab-shell"><code><span class="c">#terminal</span>
+shards install
+</code></pre>
+<p>Get all the &ldquo;Backend&rdquo; crystal dependencies</p>
+
+<h3 id="get-yarn-dependencies">Get Yarn Dependencies</h3>
+<pre class="highlight shell tab-shell"><code><span class="c">#terminal</span>
+yarn install
+</code></pre>
+<p>Get all the &ldquo;Frontend&rdquo; dependencies</p>
+
+<h2 id="getting-started">Getting Started</h2>
+<pre class="highlight shell tab-shell"><code><span class="c">#terminal</span>
+yarn run server
+</code></pre>
+<p>To test everything is good run the server.</p>
+
+<p>Now if you visit <code class="prettyprint">http://localhost:3000/</code> you should see the welcome home page</p>
+
+<h2 id="folders-structure">Folders Structure</h2>
+<pre class="highlight html tab-html"><code>#Folders
+|-- .bowerrc
+    |-- .jshintrc
+    |-- .jshintrc2
+    |-- Gruntfile.js
+    |-- README.md
+    |-- bower.json
+    |-- karma.conf.js
+    |-- package.json
+    |-- app
+        |-- app.js
+        |-- db.js
+        |-- directoryList.md
+        |-- index.html
+        |-- mddir.js
+        |-- routing.js
+        |-- server.js
+        |-- _api
+            |-- api.groups.js
+            |-- api.posts.js
+            |-- api.users.js
+            |-- api.widgets.js
+        |-- _components
+            |-- directives
+                |-- directives.module.js
+                |-- vendor
+                    |-- directive.draganddrop.js
+            |-- helpers
+                |-- helpers.module.js
+                |-- proprietary
+                    |-- factory.actionDispatcher.js
+            |-- services
+                |-- services.cardTemplates.js
+                |-- services.cards.js
+                |-- services.groups.js
+                |-- services.posts.js
+                |-- services.users.js
+                |-- services.widgets.js
+        |-- _mocks
+            |-- mocks.groups.js
+            |-- mocks.posts.js
+            |-- mocks.users.js
+            |-- mocks.widgets.js
+</code></pre>
+<p>This is an example not final</p>
+
+          <h1 id="http">HTTP</h1>
+
+<h2 id="routing">Routing</h2>
+
+<h3 id="simpler-route">Simpler Route</h3>
+<pre class="highlight ruby tab-ruby"><code><span class="c1">#src/routes/web.cr</span>
+
+<span class="n">get</span> <span class="s2">"/"</span> <span class="k">do</span>
+  <span class="s2">"Hello World!"</span>
+<span class="k">end</span>
+</code></pre>
+<p>All Routes are declared on the file <code class="prettyprint">src/routes/web.cr</code></p>
+
+<p>when you visit <code class="prettyprint">http://localhost/</code>
+you will see the page return &ldquo;Hello World!&rdquo;</p>
+
+<p>This endpoint retrieves all kittens.</p>
+
+<h2 id="rest-calls">REST Calls</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="c1">#src/routes/web.cr</span>
+
+<span class="n">get</span> <span class="s2">"/"</span> <span class="k">do</span>
+<span class="p">.</span><span class="nf">.</span> <span class="n">show</span> <span class="n">something</span> <span class="p">.</span><span class="nf">.</span>
+<span class="k">end</span>
+
+<span class="n">post</span> <span class="s2">"/"</span> <span class="k">do</span>
+<span class="p">.</span><span class="nf">.</span> <span class="n">create</span> <span class="n">something</span> <span class="p">.</span><span class="nf">.</span>
+<span class="k">end</span>
+
+<span class="n">put</span> <span class="s2">"/"</span> <span class="k">do</span>
+<span class="p">.</span><span class="nf">.</span> <span class="n">replace</span> <span class="n">something</span> <span class="p">.</span><span class="nf">.</span>
+<span class="k">end</span>
+
+<span class="n">patch</span> <span class="s2">"/"</span> <span class="k">do</span>
+<span class="p">.</span><span class="nf">.</span> <span class="n">modify</span> <span class="n">something</span> <span class="p">.</span><span class="nf">.</span>
+<span class="k">end</span>
+
+<span class="n">delete</span> <span class="s2">"/"</span> <span class="k">do</span>
+<span class="p">.</span><span class="nf">.</span> <span class="n">annihilate</span> <span class="n">something</span> <span class="p">.</span><span class="nf">.</span>
+<span class="k">end</span>
+</code></pre>
+<p>You can handle HTTP methods as easy as writing method names and the route with a code block. Kemal will handle all the hard work.</p>
+
+<h2 id="static-files">Static Files</h2>
+<pre class="highlight html tab-html"><code>#Files
+
+app/
+  src/
+    your_app.cr
+  public/
+    js/
+      jquery.js
+      your_app.js
+    css/
+      your_app.css
+    index.html
+</code></pre>
+<blockquote>
+<p>Open index.html and add</p>
+</blockquote>
+<pre class="highlight html tab-html"><code>#src/public/test.html
+
+<span class="nt">&lt;html&gt;</span>
+ <span class="nt">&lt;head&gt;</span>
+   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/js/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+   <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/js/your_app.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+   <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"/css/your_app.css"</span><span class="nt">/&gt;</span>
+ <span class="nt">&lt;/head&gt;</span>
+ <span class="nt">&lt;body&gt;</span>
+   ...
+ <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+<p>Add your files to public directory and Kemal will serve these files immediately.</p>
+
+<h2 id="static-file-options">Static File Options</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="c1">#src/rocky.cr</span>
+
+<span class="n">serve_static</span> <span class="kp">false</span>
+</code></pre>
+<h3 id="disabling-static-files">Disabling Static Files</h3>
+
+<p>By default Kemal serves static files from public folder. If you don’t need static file serving at all(if you are only running an API) you can disable it</p>
+
+<h2 id="error-handling">Error Handling</h2>
+
+<p>Error handlers run within the same context as routes and before filters which means you get all the power of those.</p>
+
+<h2 id="404-not-found">404 Not Found</h2>
+<pre class="highlight ruby tab-ruby"><code><span class="n">error</span> <span class="mi">404</span> <span class="k">do</span>
+  <span class="s2">"This is a customized 404 page."</span>
+<span class="k">end</span>
+
+</code></pre>
+<p>When a <code class="prettyprint">Kemal::Exceptions::NotFound</code> exception is raised, or the response’s status code is 404, the error 404 handler is invoked:</p>
+
+<p>You can customize the built-in error 404 handler.</p>
+
+<h2 id="custom-error-handlers-for-status-codes">Custom error handlers for status codes</h2>
+
+<p>Just like error 404 handler you can install custom error handlers for different status codes.</p>
+
+<p>error 403 do
+  &ldquo;Access Forbidden!&rdquo;
+end</p>
+
+<p>get &ldquo;/&rdquo; do |env|
+  env.response.status_code = 403
+end</p>
+
+          <h1 id="views">Views</h1>
+
+<h2 id="render-a-view">Render a View</h2>
+
+<p>Views are server side rendered pages</p>
+<pre class="highlight ruby tab-ruby"><code><span class="c1">#src/routes/web.cr</span>
+
+<span class="n">get</span> <span class="s2">"/account"</span> <span class="k">do</span>
+  <span class="n">render</span> <span class="s2">"src/views/hello.ecr"</span>
+<span class="k">end</span>
+</code></pre>
+<table><thead>
+<tr>
+<th style="text-align: left">Macro</th>
+<th style="text-align: right">Value1</th>
+<th style="text-align: right">Detail</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">render</td>
+<td style="text-align: right">src/views/hello.ecr</td>
+<td style="text-align: right">you pass down the ecr view that you want to render on that route</td>
+</tr>
+</tbody></table>
+
+<h2 id="pass-variables-to-view">Pass Variables to View</h2>
+
+<h3 id="on-the-route">On The Route</h3>
+<pre class="highlight ruby tab-ruby"><code><span class="c1">#src/routes/web.cr</span>
+
+<span class="n">get</span> <span class="s2">"/user"</span> <span class="k">do</span> <span class="o">|</span><span class="n">env</span><span class="o">|</span>
+  <span class="nb">name</span> <span class="o">=</span> <span class="s2">"Joe"</span>
+  <span class="n">render</span> <span class="s2">"src/views/hello.ecr"</span>
+<span class="k">end</span>
+</code></pre>
+<p>You declare the route route and inside the block you declare the variable.</p>
+
+<h3 id="on-the-view">On The View</h3>
+<pre class="highlight html tab-html"><code>#src/views/hello.ecr
+
+<span class="nt">&lt;div&gt;</span>
+  <span class="err">&lt;</span>%= name %&gt;
+<span class="nt">&lt;div&gt;</span>
+</code></pre>
+<p>Now inside the ecr file which is the view you want to render. You want to do an embedded tag with the name of the variable so it can show on your page.</p>
+
+<h2 id="layouts">Layouts</h2>
+
+<p>Layouts are a great way to keep your code DRY (Dont Repeat Yourself)
+For example lets say all your pages have the same header and footer throughout all the pages and all that changes is the content area do you go and copy the header and footer to every page No&hellip; we just make one main layout and then set content tag where you will show your view.</p>
+
+<blockquote>
+<p>On The Route</p>
+</blockquote>
+
+<h3 id="on-the-route">On The Route</h3>
+<pre class="highlight ruby tab-ruby"><code><span class="c1">#src/views/pages/user.ecr</span>
+
+<span class="n">get</span> <span class="s2">"/user"</span> <span class="k">do</span>
+  <span class="nb">name</span> <span class="o">=</span> <span class="s2">"joe"</span>
+  <span class="n">render</span> <span class="s2">"src/views/pages/user.ecr"</span><span class="p">,</span> <span class="s2">"src/views/layouts/main.ecr"</span>
+<span class="k">end</span>
+</code></pre>
+<table><thead>
+<tr>
+<th style="text-align: left">Macro</th>
+<th style="text-align: right">Value1</th>
+<th style="text-align: right">value2</th>
+<th style="text-align: right">Detail</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left">render</td>
+<td style="text-align: right">src/views/hello.ecr</td>
+<td style="text-align: right">src/views/layouts/main.ecr</td>
+<td style="text-align: right">you pass down the ecr view that you want to render on that route and layout page</td>
+</tr>
+<tr>
+<td style="text-align: left"></td>
+<td style="text-align: right">view location</td>
+<td style="text-align: right">layout location</td>
+<td style="text-align: right"></td>
+</tr>
+</tbody></table>
+
+<h3 id="on-the-view">On The View</h3>
+
+<blockquote>
+<p>On The View</p>
+</blockquote>
+<pre class="highlight html tab-html"><code>#src/views/hello.ecr
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-area"</span><span class="nt">&gt;</span>
+  Hey, here goes my html
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+<p>Just put the code you want to show up for that view</p>
+
+<blockquote>
+<p>On The Layout</p>
+</blockquote>
+
+<h3 id="on-the-layout">On The Layout</h3>
+<pre class="highlight html tab-html"><code>#src/views/layouts/main.ecr
+
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>My Kemal Application<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="err">&lt;</span>%= content %&gt;
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+<p>Use <code class="prettyprint">&lt;%= content %&gt;</code> tag to display the page content on the layout</p>
+
+<h2 id="content_for-yield_content">content_for &amp; yield_content</h2>
+
+<p>content_for is a great for situations where you might want to change something from the layout on every view. For example a page title or a css script.</p>
+
+<blockquote>
+<p>On The View</p>
+</blockquote>
+
+<h3 id="on-the-view">On The View</h3>
+<pre class="highlight html tab-html"><code>#src/views/pages/hello.ecr
+
+<span class="err">&lt;</span>% content_for "title" do %&gt;
+<span class="nt">&lt;title&gt;</span>My Kemal Application<span class="nt">&lt;/title&gt;</span>
+<span class="err">&lt;</span>% end %&gt;
+
+<span class="err">&lt;</span>% content_for "css" do %&gt;
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">integrity=</span><span class="s">"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+<span class="err">&lt;</span>% end %&gt;
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content-area"</span><span class="nt">&gt;</span>
+  this will be the view content
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="err">&lt;</span>% content_for "javascript" do %&gt;
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="err">&lt;</span>% end %&gt;
+</code></pre>
+<p>Use the <code class="prettyprint">content_for</code> and give it a name. You can have multiple content_for macros on a view. For example one for the title, another for css, and another for javascript.</p>
+
+<blockquote>
+<p>On The Layout</p>
+</blockquote>
+
+<h3 id="on-the-layout">On The Layout</h3>
+<pre class="highlight html tab-html"><code>#src/views/layouts/main.ecr
+
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="err">&lt;</span>%= yield_content "title" %&gt;
+  <span class="err">&lt;</span>%= yield_content "css" %&gt;
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="err">&lt;</span>%= content %&gt;
+  <span class="err">&lt;</span>%= yield_content "javascript" %&gt;
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+<p>add the <code class="prettyprint">yield_content</code> with the name of the content you want to display.</p>
+
+<h2 id="first-view">First View</h2>
+<pre class="highlight html tab-html"><code>#src/views/includes/navigation.ecr
+
+<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+</code></pre>
+<p>You can include any view in another view</p>
+<pre class="highlight html tab-html"><code>#src/views/layouts/main.ecr
+
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="err">&lt;</span>%= yield_content "title" %&gt;
+    <span class="err">&lt;</span>%= yield_content "css" %&gt;
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;header&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"menu"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+    <span class="err">&lt;</span>%= render "src/views/includes/navigation.ecr" %&gt;
+    <span class="err">&lt;</span>%= content %&gt;
+    <span class="err">&lt;</span>%= yield_content "javascript" %&gt;
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre>
+          <h1 id="database">Database</h1>
+
+<h2 id="views">Views</h2>
+
+<h2 id="react-over-crystal-and-kemal">React Over Crystal and Kemal</h2>
+
+<p>Welcome to the ROCKY Stack</p>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all kittens.</p>
+
+          <h1 id="orm">ORM</h1>
+
+<p>This endpoint retrieves all kittens.</p>
+
+          <h1 id="security">Security</h1>
+
+<h2 id="views">Views</h2>
+
+<h2 id="react-over-crystal-and-kemal">React Over Crystal and Kemal</h2>
+
+<p>Welcome to the ROCKY Stack</p>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+
+<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
+</code></pre>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all kittens.</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="code">code</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
