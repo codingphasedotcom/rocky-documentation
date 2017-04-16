@@ -1,111 +1,93 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/lord/img/master/logo-slate.png" alt="Slate: API Documentation Generator" width="226">
-  <br>
-  <a href="https://travis-ci.org/lord/slate"><img src="https://travis-ci.org/lord/slate.svg?branch=master" alt="Build Status"></a>
-</p>
 
-<p align="center">Slate helps you create beautiful, intelligent, responsive API documentation.</p>
+# Introduction
+## React Over Crystal, Kemal, & Yarn
+Current version is ```0.1.0```
 
-<p align="center"><img src="https://raw.githubusercontent.com/lord/img/master/screenshot-slate.png" width=700 alt="Screenshot of Example Documentation created with Slate"></p>
+### Welcome to the ROCKY Stack
+I built this as an experiment to put together the best libraries to build a modern yet simple stack.
 
-<p align="center"><em>The example above was created with Slate. Check it out at <a href="https://lord.github.io/slate">lord.github.io/slate</a>.</em></p>
+I chose to base my stack
 
-Features
-------------
+ * React - Solid front end framework backed by Facebook
 
-* **Clean, intuitive design** — With Slate, the description of your API is on the left side of your documentation, and all the code examples are on the right side. Inspired by [Stripe's](https://stripe.com/docs/api) and [Paypal's](https://developer.paypal.com/webapps/developer/docs/api/) API docs. Slate is responsive, so it looks great on tablets, phones, and even in print.
+ * Crystal - A powerful new language with syntax similar to ruby but is as fast as "C"
 
-* **Everything on a single page** — Gone are the days when your users had to search through a million pages to find what they wanted. Slate puts the entire documentation on a single page. We haven't sacrificed linkability, though. As you scroll, your browser's hash will update to the nearest header, so linking to a particular point in the documentation is still natural and easy.
+ * Kemal - Super light weight http framework made by Serdar Doğruyol
 
-* **Slate is just Markdown** — When you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. Everything is written in Markdown — even the code samples are just Markdown code blocks.
+ * Yarn - The fastest package manager also made by Facebook
 
-* **Write code samples in multiple languages** — If your API has bindings in multiple programming languages, you can easily put in tabs to switch between them. In your document, you'll distinguish different languages by specifying the language name at the top of each code block, just like with Github Flavored Markdown.
+## Installation
+Follow the code on the right for the installation commands that you will have to run on your operating systems terminal / console.
 
-* **Out-of-the-box syntax highlighting** for [over 100 languages](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers), no configuration required.
+Requirements
 
-* **Automatic, smoothly scrolling table of contents** on the far left of the page. As you scroll, it displays your current position in the document. It's fast, too. We're using Slate at TripIt to build documentation for our new API, where our table of contents has over 180 entries. We've made sure that the performance remains excellent, even for larger documents.
-
-* **Let your users update your documentation for you** — By default, your Slate-generated documentation is hosted in a public Github repository. Not only does this mean you get free hosting for your docs with Github Pages, but it also makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you're also welcome to host your docs elsewhere.
-
-Getting started with Slate is super easy! Simply fork this repository and follow the instructions below. Or, if you'd like to check out what Slate is capable of, take a look at the [sample docs](http://lord.github.io/slate).
-
-Getting Started with Slate
-------------------------------
-
-### Prerequisites
-
-You're going to need:
-
- - **Linux or OS X** — Windows may work, but is unsupported.
- - **Ruby, version 2.2.5 or newer**
- - **Bundler** — If Ruby is already installed, but the `bundle` command doesn't work, just run `gem install bundler` in a terminal.
-
-### Getting Set Up
-
-1. Fork this repository on Github.
-2. Clone *your forked repository* (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/slate.git`
-3. `cd slate`
-4. Initialize and start Slate. You can either do this locally, or with Vagrant:
-
+### Rocky Project
 ```shell
-# either run this to run locally
-bundle install
-bundle exec middleman server
-
-# OR run this to run with vagrant
-vagrant up
+git clone https://github.com/codingphasedotcom/rocky
 ```
 
-You can now see the docs at http://localhost:4567. Whoa! That was fast!
+Download or clone the ROCKY Project
 
-Now that Slate is all set up on your machine, you'll probably want to learn more about [editing Slate markdown](https://github.com/lord/slate/wiki/Markdown-Syntax), or [how to publish your docs](https://github.com/lord/slate/wiki/Deploying-Slate).
+[https://github.com/codingphasedotcom/rocky](https://github.com/codingphasedotcom/rocky)
 
-If you'd prefer to use Docker, instructions are available [in the wiki](https://github.com/lord/slate/wiki/Docker).
+homebrew for mac
 
-Companies Using Slate
----------------------------------
+## OS X (Mac)
+```shell
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+Homebrew
 
-* [NASA](https://api.nasa.gov)
-* [IBM](https://docs.cloudant.com/api.html)
-* [Sony](http://developers.cimediacloud.com)
-* [Mozilla](http://localforage.github.io/localForage/)
-* [Best Buy](https://bestbuyapis.github.io/api-documentation/)
-* [Travis-CI](https://docs.travis-ci.com/api/)
-* [Greenhouse](https://developers.greenhouse.io/harvest.html)
-* [Woocommerce](http://woocommerce.github.io/woocommerce-rest-api-docs/)
-* [Appium](http://appium.io/slate/en/master)
-* [Dwolla](https://docs.dwolla.com/)
-* [Clearbit](https://clearbit.com/docs)
-* [Coinbase](https://developers.coinbase.com/api)
-* [Parrot Drones](http://developer.parrot.com/docs/bebop/)
-* [Fidor Bank](http://docs.fidor.de/)
-* [Scale](https://docs.scaleapi.com/)
+```shell
+brew update
+brew install crystal-lang
+brew install yarn
+```
 
-You can view more in [the list on the wiki](https://github.com/lord/slate/wiki/Slate-in-the-Wild).
+Make sure you have homebrew
 
-Need Help? Found a bug?
---------------------
+## Ubuntu / Linux
+```shell
+curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
+sudo apt-get install crystal
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
 
-[Submit an issue](https://github.com/lord/slate/issues) to the Slate Github if you need any help. And, of course, feel free to submit pull requests with bug fixes or changes.
+Debian / Ubuntu
 
-Contributors
---------------------
+For other OSes and distros check the official documentation.
 
-Slate was built by [Robert Lord](https://lord.io) while interning at [TripIt](https://www.tripit.com/).
+[https://yarnpkg.com/en/docs/install#linux-tab](https://yarnpkg.com/en/docs/install#linux-tab)
 
-Thanks to the following people who have submitted major pull requests:
 
-- [@chrissrogers](https://github.com/chrissrogers)
-- [@bootstraponline](https://github.com/bootstraponline)
-- [@realityking](https://github.com/realityking)
-- [@cvkef](https://github.com/cvkef)
 
-Also, thanks to [Sauce Labs](http://saucelabs.com) for helping sponsor the project.
 
-Special Thanks
---------------------
-- [Middleman](https://github.com/middleman/middleman)
-- [jquery.tocify.js](https://github.com/gfranko/jquery.tocify.js)
-- [middleman-syntax](https://github.com/middleman/middleman-syntax)
-- [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+## Dependencies
+### Get Crystal Dependencies
+```shell
+#terminal
+shards install
+```
+
+Get all the "Backend" crystal dependencies
+
+
+### Get Yarn Dependencies
+```shell
+#terminal
+yarn install
+```
+
+Get all the "Frontend" dependencies
+
+
+## Getting Started
+```shell
+#terminal
+yarn run server
+```
+
+To test everything is good run the server.
+
+Now if you visit ```http://localhost:3000/``` you should see the welcome home page
