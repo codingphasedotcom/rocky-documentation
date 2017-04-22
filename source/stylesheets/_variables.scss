@@ -19,12 +19,12 @@ under the License.
 // Use these settings to help adjust the appearance of Slate
 // BACKGROUND COLORS
 ////////////////////
-$nav-bg: #393939 !default;
+$nav-bg: #7019e2 !default;
 $examples-bg: #7019e2 !default;
 $code-bg: #440696 !default;
 $code-annotation-bg: #1c1c1c !default;
-$nav-subitem-bg: #262626 !default;
-$nav-active-bg: #2467af !default;
+$nav-subitem-bg: #440696 !default;
+$nav-active-bg: #2DCBD0 !default;
 $lang-select-border: #000 !default;
 $lang-select-bg: #222 !default;
 $lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
@@ -58,19 +58,19 @@ $phone-width: $tablet-width - $nav-width !default; // min width before reverting
 ////////////////////
 
 %default-font {
-    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
-    font-size: 13px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+  font-size: 13px;
 }
 
 %header-font {
-    @extend %default-font;
-    font-weight: bold;
+  @extend %default-font;
+  font-weight: bold;
 }
 
 %code-font {
-    font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
-    font-size: 12px;
-    line-height: 1.5;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+  font-size: 12px;
+  line-height: 1.5;
 }
 // OTHER
 ////////////////////
@@ -85,6 +85,6 @@ $search-box-border-color: #666 !default; ///////////////////////////////////////
 // These settings are probably best left alone.
 
 %break-words {
-    word-break: break-all;
-    hyphens: auto;
+  word-break: break-all;
+  hyphens: auto;
 }

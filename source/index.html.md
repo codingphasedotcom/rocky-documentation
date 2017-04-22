@@ -101,6 +101,13 @@ yarn install
 Get all the "Frontend" dependencies
 
 
+### Get Gulp
+```shell
+npm install --global gulp-cli
+```
+
+Install Gulp to be your task runner.
+
 ## Getting Started
 ```shell
 #terminal
