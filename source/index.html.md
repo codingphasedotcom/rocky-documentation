@@ -6,7 +6,7 @@ language_tabs:
 
 toc_footers:
   - <a href='https://www.patreon.com/user?u=2517498'>Support On Patreon with $1 </a>
-
+<a href="https://www.patreon.com/bePatron?u=2517498" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 includes:
   - http
