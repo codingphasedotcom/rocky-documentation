@@ -5,8 +5,8 @@ language_tabs:
   - code
 
 toc_footers:
-  - <a href='https://www.patreon.com/user?u=2517498'>Support On Patreon with $1 </a>
-<a href="https://www.patreon.com/bePatron?u=2517498" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
   - http
@@ -20,7 +20,7 @@ search: true
 
 # Introduction
 ## React Over Crystal, Kemal, & Yarn
-Current version is ```1.1.0```
+Current version is ```0.1.0```
 
 ### Welcome to the ROCKY Stack
 I built this as an experiment to put together the best libraries to build a modern yet simple stack.
@@ -106,7 +106,7 @@ Get all the "Frontend" dependencies
 npm install --global gulp-cli
 ```
 
-Install Gulp to be your task runner.
+Install Gulp to be
 
 ## Getting Started
 ```shell
